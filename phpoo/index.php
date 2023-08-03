@@ -1,10 +1,11 @@
 <?php
-
+require ("Carro.php");
 class Fruta 
 {
-    public $nome;
+    private $nome;
     public $cor;
 
+    function __construct()
 
     function set_name($nome)
     {
@@ -27,5 +28,5 @@ class Fruta
 
 $maca = new Fruta ();
 $maca->set_name("maca_ifsp","vermelho");
-echo "<br>".$maca->get_name()."<br>".amanda."<br>".besta;
+echo "<br>".$maca->get_name();
 ?>
